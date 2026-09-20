@@ -96,7 +96,7 @@ export const projects: Project[] = [
     status: "Demo en vivo",
     link: "https://nexa-frontend-sandy.vercel.app/",
     repo: "https://github.com/emilykohler12/nexa-frontend",
-    image: "",
+    image: "/projects/nexa.webp",
   },
   {
     name: "Clinix",
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     status: "Demo en vivo",
     link: "https://sistema-clinix.vercel.app/",
     repo: "https://github.com/emilykohler12/Sistema-clinix",
-    image: "",
+    image: "/projects/clinix.png",
   },
   {
     name: "Syntri",
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     status: "Demo en vivo",
     link: "https://sistem-syntri.vercel.app/",
     repo: "https://github.com/emilykohler12/sistem_Syntri",
-    image: "",
+    image: "/projects/syntri.png",
   },
   {
     name: "freddymotos",
@@ -163,7 +163,7 @@ export const projects: Project[] = [
     status: "Proyecto personal",
     link: "https://drive.google.com/drive/folders/1yMv1JAzHC4pnBCB8QAsD3c_Eb17OO46L",
     linkLabel: "Ver proyecto ↗",
-    image: "",
+    image: "/projects/hidden-memories.webp",
   },
 ];
 

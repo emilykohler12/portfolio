@@ -1,64 +1,39 @@
-# Portafolio — Emily Kohler
+# Emily Kohler
 
-Sitio de portafolio personal, hecho con Next.js + TypeScript + Tailwind CSS.
+## Sobre mí
 
-## Desarrollo local
+Soy desarrolladora full stack. Trabajo tanto en el backend (APIs, bases de
+datos, integraciones de pago, autenticación) como en el frontend (interfaces
+claras y responsivas).
 
-```bash
-npm install
-npm run dev
-```
+Me interesa especialmente resolver problemas reales de negocio: sistemas de
+turnos, pagos online, paneles de administración con métricas en vivo y
+automatizaciones que le ahorran trabajo manual a quien los usa.
 
-Abrí [http://localhost:3000](http://localhost:3000).
+## Proyectos
 
-## Editar el contenido
+### Nexa
+Plataforma de gestión de turnos online para peluquerías y salones, con pago
+de seña integrado vía Mercado Pago, combos de turnos simultáneos, campañas
+automáticas por cumpleaños e hitos, y un panel de administración con KPIs y
+gráficos en vivo.
 
-Todo el texto (nombre, bio, habilidades, proyectos, preguntas frecuentes y
-datos de contacto) vive en un solo archivo:
+### Clinix
+Sistema de gestión clínica full-stack: historia clínica completa por
+paciente, calendario de turnos con recordatorios y avisos automáticos por
+email, autenticación con roles (admin / médico) y búsqueda en tiempo real.
 
-[`src/data/content.ts`](src/data/content.ts)
+### Syntri
+API REST para el envío centralizado de notificaciones a Slack, Discord y
+Telegram desde un mismo endpoint, con panel de administración, roles con
+permisos configurables y límites de envío auditables.
 
-No hace falta tocar los componentes para actualizar textos, agregar un
-proyecto nuevo o sumar una pregunta al FAQ — solo editá ese archivo.
+### freddymotos
+Tienda online de repuestos y accesorios para motos, con catálogo, carrito,
+checkout con Mercado Pago y un panel de administración completo: KPIs,
+inventario, pedidos, clientes y proveedores.
 
-Antes de publicar, completá en `profile`:
-- `email`, `github` y `linkedin` (ya cargados)
-- `location` (opcional)
-- `heroImage` / `faqImage`: tu foto. Guardala en `public/` (ej. `public/yo.jpg`)
-  y escribí la ruta ahí (ej. `"/yo.jpg"`). Vacío muestra un marco con tus
-  iniciales.
-
-### Capturas de pantalla de los proyectos
-
-Cada proyecto en `projects` tiene un campo `image`. Para agregar la
-captura de un proyecto (o del video del videojuego):
-
-1. Guardá el archivo en `public/projects/` (ej. `public/projects/nexa.png`).
-2. Escribí la ruta en el campo `image` de ese proyecto, ej. `"/projects/nexa.png"`.
-
-Mientras `image` esté vacío (`""`), se muestra un marco placeholder con el
-nombre del proyecto. Los proyectos se ven en un carrusel (una imagen grande
-+ descripción al lado) — usá capturas apaisadas (idealmente 4:3) para que
-se vean bien recortadas.
-
-## Estructura
-
-```
-src/
-  app/            layout, page principal y estilos globales
-  components/     Header, Hero, About, Skills, Projects, Faq, Contact, Footer
-  data/content.ts contenido editable del sitio
-```
-
-## Build de producción
-
-```bash
-npm run build
-npm start
-```
-
-## Deploy
-
-El proyecto es 100% estático/SSR estándar de Next.js, así que se puede
-desplegar directo en [Vercel](https://vercel.com/new) (conectando el repo)
-o en cualquier otro hosting compatible con Next.js (Render, Netlify, etc.).
+### Hidden Memories
+Videojuego 2D de aventura hecho en Unity: una chica atraviesa un mundo
+acuático superando obstáculos, con pociones, combate, NPCs, dos subniveles
+y fondo parallax animado.
