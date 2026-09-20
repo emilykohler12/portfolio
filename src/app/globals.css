@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f3ede0;
+  --cream-soft: #faf6ec;
+  --forest: #1e3d2f;
+  --forest-deep: #163024;
+  --pink: #e7b7c9;
+  --pink-soft: #f2d3de;
+  --pink-deep: #d98fa9;
+  --ink: #1c2a20;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-soft: var(--cream-soft);
+  --color-forest: var(--forest);
+  --color-forest-deep: var(--forest-deep);
+  --color-pink: var(--pink);
+  --color-pink-soft: var(--pink-soft);
+  --color-pink-deep: var(--pink-deep);
+  --color-ink: var(--ink);
+  --font-serif: var(--font-serif);
+  --font-script: var(--font-script);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+/* Repeating candy-stripe pattern used as a picture-frame border */
+.stripe-frame {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--pink) 0 22px,
+    var(--cream-soft) 22px 44px,
+    var(--forest) 44px 66px,
+    var(--cream-soft) 66px 88px
+  );
+}
+
+.stripe-frame-thin {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--pink) 0 14px,
+    var(--cream-soft) 14px 28px,
+    var(--forest) 28px 42px,
+    var(--cream-soft) 42px 56px
+  );
+}
+
+/* Infinite scrolling ticker */
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker 22s linear infinite;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+}
+
+/* Vintage stamp-style photo frame */
+.stamp-frame {
+  border: 10px dotted var(--forest);
+  outline: 3px solid var(--forest);
+  outline-offset: 6px;
+}
+
+/* Polaroid-style photo frame */
+.polaroid-frame {
+  background: var(--cream-soft);
+  padding: 14px 14px 40px 14px;
+  box-shadow: 0 18px 30px -12px rgba(30, 61, 47, 0.35);
+}
