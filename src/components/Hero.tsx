@@ -27,9 +27,12 @@ export default function Hero() {
                 {profile.heroHeadline}
               </h1>
 
-              <div className="mt-6 flex items-center gap-4 border-t border-forest/15 pt-4">
+              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-forest/15 pt-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-forest/60">
                   {profile.heroByline}
+                  {profile.location && (
+                    <span className="text-forest/40"> · {profile.location}</span>
+                  )}
                 </p>
                 <a
                   href="#sobre-mi"

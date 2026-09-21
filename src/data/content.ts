@@ -30,7 +30,7 @@ export const profile = {
   faqImage: "/emi2.jpg",
 
   email: "emilynoralikohler@gmail.com",
-  location: "",
+  location: "Posadas, Misiones, Argentina",
   github: "https://github.com/emilykohler12",
   linkedin: "https://www.linkedin.com/in/emily-noral%C3%AD-kohler-17ba62290/",
 };
@@ -56,6 +56,118 @@ export const skills: SkillGroup[] = [
   {
     category: "Herramientas",
     items: ["Git", "Docker", "Render", "Vercel", "Postman"],
+  },
+];
+
+export type Service = {
+  title: string;
+  description: string;
+};
+
+export const servicesIntro = {
+  eyebrow: "Servicios",
+  headline: "QUE OFREZCO",
+};
+
+export const services: Service[] = [
+  {
+    title: "Desarrollo web full stack",
+    description:
+      "Sitios y aplicaciones a medida, de punta a punta: backend, base de datos e interfaz.",
+  },
+  {
+    title: "Paneles de administración",
+    description:
+      "Dashboards con KPIs, métricas en vivo y gestión centralizada del negocio.",
+  },
+  {
+    title: "Integración de pagos",
+    description:
+      "Checkout y cobros online con Mercado Pago, listos para producción.",
+  },
+  {
+    title: "Automatizaciones y notificaciones",
+    description:
+      "Recordatorios por email, alertas a Slack, Discord o Telegram, y tareas programadas.",
+  },
+  {
+    title: "Sistemas a medida",
+    description:
+      "Turnos, historias clínicas, inventario: un modelo de datos pensado para tu negocio, no campos genéricos.",
+  },
+  {
+    title: "Mantenimiento y soporte",
+    description:
+      "Acompañamiento de sistemas ya en producción: mejoras, correcciones y nuevas funcionalidades.",
+  },
+];
+
+export type ProcessStep = {
+  number: string;
+  title: string;
+  description: string;
+};
+
+export const processIntro = {
+  eyebrow: "Rigurosa por dentro.",
+  headline: "SIMPLE PARA VOS.",
+  description:
+    "La complejidad técnica queda de mi lado. Vos ves una secuencia clara, un responsable (yo) y resultados que se pueden comprobar.",
+};
+
+export const processSteps: ProcessStep[] = [
+  {
+    number: "01",
+    title: "Entender",
+    description:
+      "Escucho el problema, observo el proceso y defino qué debería mejorar.",
+  },
+  {
+    number: "02",
+    title: "Diseñar y conectar",
+    description: "Simplifico el flujo y conecto solo las fuentes necesarias.",
+  },
+  {
+    number: "03",
+    title: "Implementar y controlar",
+    description:
+      "Automatizo o incorporo IA con permisos, registros y revisión humana.",
+  },
+  {
+    number: "04",
+    title: "Medir y evolucionar",
+    description:
+      "Comparo el antes y el después. Amplío únicamente lo que funciona.",
+  },
+];
+
+export const supportIntro = {
+  eyebrow: "De la mejora inicial a",
+  headline: "LA EVOLUCIÓN CONTINUA.",
+  description:
+    "No entrego una solución aislada: acompaño la implementación, el crecimiento y la evolución del sistema.",
+};
+
+export const supportItems: ProcessStep[] = [
+  {
+    number: "01",
+    title: "De punta a punta",
+    description: "Relevamiento, implementación, adopción y operación.",
+  },
+  {
+    number: "02",
+    title: "Soporte claro",
+    description: "Canales, tiempos de respuesta y un solo responsable: yo.",
+  },
+  {
+    number: "03",
+    title: "Escalable por diseño",
+    description: "Preparado para más volumen, usuarios, fuentes y funcionalidades.",
+  },
+  {
+    number: "04",
+    title: "Evolución medible",
+    description: "Mejoras priorizadas a partir del uso real.",
   },
 ];
 

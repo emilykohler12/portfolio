@@ -3,10 +3,10 @@ import { profile } from "@/data/content";
 const links = [
   { href: "#top", label: "Inicio" },
   { href: "#sobre-mi", label: "Sobre mí" },
+  { href: "#servicios", label: "Servicios" },
   { href: "#proyectos", label: "Proyectos" },
   { href: "#habilidades", label: "Habilidades" },
   { href: "#faq", label: "Preguntas" },
-  { href: "#contacto", label: "Contacto" },
 ];
 
 export default function Header() {
@@ -19,12 +19,12 @@ export default function Header() {
         >
           {profile.initials}
         </a>
-        <nav className="hidden items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-forest/80 md:flex">
+        <nav className="hidden items-center whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.1em] text-forest/80 lg:flex">
           {links.map((link, index) => (
             <a
               key={link.href}
               href={link.href}
-              className={`rounded-full px-3 py-1.5 transition-colors hover:text-forest ${
+              className={`rounded-full px-2.5 py-1.5 transition-colors hover:text-forest ${
                 index === 0 ? "bg-pink-soft text-forest" : ""
               }`}
             >
