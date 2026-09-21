@@ -32,73 +32,85 @@ export default function Projects() {
             className="aspect-[4/3] w-full lg:aspect-auto lg:min-h-[420px]"
           />
 
-          <div className="flex flex-col justify-center bg-cream-soft/5 p-6 sm:p-10">
-            <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-cream-soft/10 font-serif text-base font-bold">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <div>
-                <h3 className="font-serif text-2xl font-bold sm:text-3xl">
-                  {project.name}
-                </h3>
-                {project.status && (
-                  <span className="text-xs uppercase tracking-wide text-pink/80">
-                    {project.status}
+          <div className="grid bg-cream-soft/5">
+            {projects.map((p, i) => (
+              <div
+                key={p.name}
+                aria-hidden={i !== index}
+                className={`col-start-1 row-start-1 flex flex-col justify-center p-6 sm:p-10 ${
+                  i === index ? "" : "invisible"
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-cream-soft/10 font-serif text-base font-bold">
+                    {String(i + 1).padStart(2, "0")}
                   </span>
+                  <div>
+                    <h3 className="font-serif text-2xl font-bold sm:text-3xl">
+                      {p.name}
+                    </h3>
+                    {p.status && (
+                      <span className="text-xs uppercase tracking-wide text-pink/80">
+                        {p.status}
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <p className="mt-4 text-base text-cream-soft/80">{p.description}</p>
+
+                {p.highlights.length > 0 && (
+                  <ul className="mt-4 space-y-2 text-base text-cream-soft/70">
+                    {p.highlights.map((point) => (
+                      <li key={point} className="flex gap-2">
+                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-pink" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {p.stack.length > 0 && (
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {p.stack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full border border-cream-soft/20 px-3 py-1 text-sm text-cream-soft/80"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {(p.link || p.repo) && (
+                  <div className="mt-6 flex gap-5 text-sm font-semibold uppercase tracking-[0.15em]">
+                    {p.link && (
+                      <a
+                        href={p.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        tabIndex={i === index ? undefined : -1}
+                        className="text-pink underline underline-offset-4 hover:text-cream-soft"
+                      >
+                        {p.linkLabel ?? "Ver sitio ↗"}
+                      </a>
+                    )}
+                    {p.repo && (
+                      <a
+                        href={p.repo}
+                        target="_blank"
+                        rel="noreferrer"
+                        tabIndex={i === index ? undefined : -1}
+                        className="text-pink underline underline-offset-4 hover:text-cream-soft"
+                      >
+                        Código ↗
+                      </a>
+                    )}
+                  </div>
                 )}
               </div>
-            </div>
-
-            <p className="mt-4 text-base text-cream-soft/80">{project.description}</p>
-
-            {project.highlights.length > 0 && (
-              <ul className="mt-4 space-y-2 text-base text-cream-soft/70">
-                {project.highlights.map((point) => (
-                  <li key={point} className="flex gap-2">
-                    <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-pink" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {project.stack.length > 0 && (
-              <div className="mt-5 flex flex-wrap gap-2">
-                {project.stack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-full border border-cream-soft/20 px-3 py-1 text-sm text-cream-soft/80"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            )}
-
-            {(project.link || project.repo) && (
-              <div className="mt-6 flex gap-5 text-sm font-semibold uppercase tracking-[0.15em]">
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-pink underline underline-offset-4 hover:text-cream-soft"
-                  >
-                    {project.linkLabel ?? "Ver sitio ↗"}
-                  </a>
-                )}
-                {project.repo && (
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-pink underline underline-offset-4 hover:text-cream-soft"
-                  >
-                    Código ↗
-                  </a>
-                )}
-              </div>
-            )}
+            ))}
           </div>
         </div>
 
