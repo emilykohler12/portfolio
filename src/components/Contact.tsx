@@ -18,8 +18,18 @@ export default function Contact() {
           {profile.email}
         </a>
 
-        {(profile.github || profile.linkedin) && (
-          <div className="mt-6 flex justify-center gap-6 text-xs font-semibold uppercase tracking-[0.15em] text-cream-soft/70">
+        {(profile.phone || profile.github || profile.linkedin) && (
+          <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-semibold uppercase tracking-[0.15em] text-cream-soft/70">
+            {profile.phone && (
+              <a
+                href={`https://wa.me/${profile.whatsapp}`}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-cream-soft"
+              >
+                WhatsApp · {profile.phone}
+              </a>
+            )}
             {profile.github && (
               <a href={profile.github} target="_blank" rel="noreferrer" className="hover:text-cream-soft">
                 GitHub

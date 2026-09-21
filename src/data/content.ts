@@ -18,7 +18,7 @@ export const profile = {
   aboutCta: "VER PROYECTOS",
 
   bio: [
-    "Soy desarrolladora full stack. Trabajo tanto en el backend (APIs, bases de datos, integraciones de pago, autenticación) como en el frontend (interfaces claras y responsivas).",
+    "Soy estudiante de Ingeniería en Sistemas de Información (5to año) y desarrolladora full stack. Trabajo tanto en el backend (APIs, bases de datos, integraciones de pago, autenticación) como en el frontend (interfaces claras y responsivas).",
     "Me interesa especialmente resolver problemas reales de negocio: sistemas de turnos, pagos online, paneles de administración con métricas en vivo y automatizaciones que le ahorran trabajo manual a quien los usa.",
   ],
 
@@ -30,6 +30,10 @@ export const profile = {
   faqImage: "/emi2.jpg",
 
   email: "emilynoralikohler@gmail.com",
+  phone: "+54 3751 574185",
+  // Número anterior en formato wa.me (código de país + 9 + característica +
+  // número, sin espacios ni signos), para el link directo de WhatsApp.
+  whatsapp: "5493751574185",
   location: "Posadas, Misiones, Argentina",
   github: "https://github.com/emilykohler12",
   linkedin: "https://www.linkedin.com/in/emily-noral%C3%AD-kohler-17ba62290/",
