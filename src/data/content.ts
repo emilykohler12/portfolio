@@ -100,6 +100,11 @@ export const services: Service[] = [
       "Turnos, historias clínicas, inventario: un modelo de datos pensado para tu negocio, no campos genéricos.",
   },
   {
+    title: "Testing y calidad",
+    description:
+      "Tests automatizados y CI/CD para que cada cambio se pruebe solo antes de llegar a producción.",
+  },
+  {
     title: "Mantenimiento y soporte",
     description:
       "Acompañamiento de sistemas ya en producción: mejoras, correcciones y nuevas funcionalidades.",
@@ -260,8 +265,8 @@ export const projects: Project[] = [
       "Gastos e ingresos organizados por categoría, y notificaciones de stock bajo, pagos y reembolsos pendientes",
     ],
     stack: ["Laravel", "PHP", "Blade", "Tailwind CSS", "Vite", "Mercado Pago API", "Mailjet", "MySQL"],
-    status: "Proyecto en desarrollo",
-    // TODO: agregar el link de demo cuando esté subido.
+    status: "Demo en vivo",
+    link: "https://freddymotos.onrender.com/",
     repo: "https://github.com/emilykohler12/freddymotos-web",
     image: "/projects/freddymotos.webp",
   },
