@@ -80,6 +80,11 @@ export const services: Service[] = [
       "Sitios y aplicaciones a medida, de punta a punta: backend, base de datos e interfaz.",
   },
   {
+    title: "Landing pages institucionales",
+    description:
+      "Sitios de presentación simples y rápidos de armar, para cuando no hace falta un sistema completo.",
+  },
+  {
     title: "Paneles de administración",
     description:
       "Dashboards con KPIs, métricas en vivo y gestión centralizada del negocio.",
@@ -95,6 +100,16 @@ export const services: Service[] = [
       "Recordatorios por email, alertas a Slack, Discord o Telegram, y tareas programadas.",
   },
   {
+    title: "Automatización de datos y reportes",
+    description:
+      "Sincronizo información entre sistemas, extraigo datos de fuentes externas y genero reportes automáticos, sin cargar nada a mano.",
+  },
+  {
+    title: "Automatizaciones con IA",
+    description:
+      "Integro modelos de lenguaje (LLM) para clasificar documentos (por ejemplo, facturas), extraer datos o responder consultas automáticamente, con revisión humana cuando hace falta.",
+  },
+  {
     title: "Sistemas a medida",
     description:
       "Turnos, historias clínicas, inventario: un modelo de datos pensado para tu negocio, no campos genéricos.",
@@ -108,6 +123,11 @@ export const services: Service[] = [
     title: "Mantenimiento y soporte",
     description:
       "Acompañamiento de sistemas ya en producción: mejoras, correcciones y nuevas funcionalidades.",
+  },
+  {
+    title: "Consultoría técnica",
+    description:
+      "Reviso código o arquitectura de un sistema existente y te digo qué mejorar, sin necesariamente construirlo yo.",
   },
 ];
 
