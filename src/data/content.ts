@@ -263,7 +263,7 @@ export const projects: Project[] = [
     status: "Proyecto en desarrollo",
     // TODO: agregar el link de demo cuando esté subido.
     repo: "https://github.com/emilykohler12/freddymotos-web",
-    image: "",
+    image: "/projects/freddymotos.webp",
   },
   {
     name: "Hidden Memories",
