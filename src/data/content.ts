@@ -92,12 +92,12 @@ export const services: Service[] = [
   {
     title: "Integración de pagos",
     description:
-      "Checkout y cobros online con Mercado Pago, listos para producción.",
+      "Checkout y cobros online listos para producción, por ejemplo con Mercado Pago (o la pasarela que uses).",
   },
   {
     title: "Automatizaciones y notificaciones",
     description:
-      "Recordatorios por email, alertas a Slack, Discord o Telegram, y tareas programadas.",
+      "Recordatorios y alertas automáticas por email u otros canales, por ejemplo Slack, Discord o Telegram.",
   },
   {
     title: "Automatización de datos y reportes",
@@ -128,6 +128,11 @@ export const services: Service[] = [
     title: "Consultoría técnica",
     description:
       "Reviso código o arquitectura de un sistema existente y te digo qué mejorar, sin necesariamente construirlo yo.",
+  },
+  {
+    title: "Migración de sistemas",
+    description:
+      "Actualizo o migro sistemas existentes a un stack más moderno, sin cortar la operación del negocio.",
   },
 ];
 

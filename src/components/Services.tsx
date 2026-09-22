@@ -3,7 +3,7 @@ import { services, servicesIntro } from "@/data/content";
 export default function Services() {
   return (
     <section id="servicios" className="bg-pink-soft py-16 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="w-full px-4 sm:px-8 lg:px-14">
         <div className="text-center">
           <p className="font-script text-3xl text-pink-deep sm:text-4xl">
             {servicesIntro.eyebrow}
@@ -13,7 +13,7 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <div
               key={service.title}
