@@ -240,7 +240,7 @@ export const projects: Project[] = [
     ],
     stack: ["Node.js", "Express", "Prisma", "PostgreSQL", "React", "Mercado Pago API"],
     status: "Demo en vivo",
-    link: "https://nexa-frontend-sandy.vercel.app/",
+    link: "https://lorenestudiodebelleza.vercel.app/",
     repo: "https://github.com/emilykohler12/nexa-frontend",
     image: "/projects/nexa.webp",
   },
