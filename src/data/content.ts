@@ -296,6 +296,33 @@ export const projects: Project[] = [
     image: "/projects/freddymotos.webp",
   },
   {
+    name: "LexSearch",
+    description:
+      "Asistente de inteligencia artificial para un abogado: guarda sus leyes, fallos y modelos de escritos, y responde preguntas mostrando de qué documento salió cada dato.",
+    highlights: [
+      "Búsqueda por significado y por palabras exactas, con filtro por tipo de documento",
+      "Respuestas en bloques con cita: al hacer clic se resalta la frase y se abre el PDF original en esa página",
+      "Carga de documentos en segundo plano, con OCR para escaneos y detección de duplicados",
+      "Borradores con IA (carta documento, contrato, demanda) editables y descargables en Word",
+      "Fichas de cliente completadas con IA y control de plazos judiciales con feriados y días inhábiles",
+    ],
+    stack: [
+      "Node.js",
+      "TypeScript",
+      "Express",
+      "Prisma",
+      "React 19",
+      "Vite",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "pgvector",
+      "Gemini",
+      "Docker",
+    ],
+    status: "Proyecto personal",
+    image: "/projects/lexsearch.png",
+  },
+  {
     name: "Hidden Memories",
     description:
       "Videojuego 2D de aventura hecho en Unity: una chica atraviesa un mundo acuático superando obstáculos para avanzar, recolectando monedas y cofres.",

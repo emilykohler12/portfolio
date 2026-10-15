@@ -33,6 +33,12 @@ Tienda online de repuestos y accesorios para motos, con catálogo, carrito,
 checkout con Mercado Pago y un panel de administración completo: KPIs,
 inventario, pedidos, clientes y proveedores.
 
+### LexSearch
+Asistente de IA para un abogado: guarda leyes, fallos y modelos de escritos,
+y responde preguntas citando el documento y la página de origen. Incluye
+borradores con IA descargables en Word, fichas de cliente y control de plazos
+judiciales con feriados.
+
 ### Hidden Memories
 Videojuego 2D de aventura hecho en Unity: una chica atraviesa un mundo
 acuático superando obstáculos, con pociones, combate, NPCs, dos subniveles
