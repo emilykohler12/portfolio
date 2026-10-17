@@ -333,9 +333,8 @@ export const projects: Project[] = [
       "Diseño adaptado a celular, tablet y escritorio, con SEO básico",
       "107 tests automatizados",
     ],
-    stack: ["HTML", "CSS", "JavaScript", "Node.js", "Vercel"],
-    status: "Sitio en vivo",
-    link: "https://kologic.vercel.app/",
+    stack: ["HTML", "CSS", "JavaScript", "Node.js"],
+    status: "Proyecto de mi empresa",
     image: "/projects/kologic.webp",
   },
   {
