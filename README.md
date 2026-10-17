@@ -39,6 +39,11 @@ y responde preguntas citando el documento y la página de origen. Incluye
 borradores con IA descargables en Word, fichas de cliente y control de plazos
 judiciales con feriados.
 
+### Kologic
+Sitio web de mi empresa, con proyectos, habilidades, servicios y formulario
+de contacto para pedir presupuesto. Una página por proyecto, diseño
+adaptable y tests automatizados.
+
 ### Hidden Memories
 Videojuego 2D de aventura hecho en Unity: una chica atraviesa un mundo
 acuático superando obstáculos, con pociones, combate, NPCs, dos subniveles

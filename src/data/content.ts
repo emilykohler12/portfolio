@@ -323,6 +323,22 @@ export const projects: Project[] = [
     image: "/projects/lexsearch.png",
   },
   {
+    name: "Kologic",
+    description:
+      "Sitio web de mi empresa, donde muestro mis proyectos, habilidades y servicios, y donde se puede pedir un presupuesto.",
+    highlights: [
+      "Página de inicio con 8 secciones y una página propia para cada proyecto",
+      "Formulario de contacto con validación, protección contra bots y límite de envíos",
+      "Botón de contacto flotante por WhatsApp en todas las páginas",
+      "Diseño adaptado a celular, tablet y escritorio, con SEO básico",
+      "107 tests automatizados",
+    ],
+    stack: ["HTML", "CSS", "JavaScript", "Node.js", "Vercel"],
+    status: "Sitio en vivo",
+    link: "https://kologic.vercel.app/",
+    image: "/projects/kologic.webp",
+  },
+  {
     name: "Hidden Memories",
     description:
       "Videojuego 2D de aventura hecho en Unity: una chica atraviesa un mundo acuático superando obstáculos para avanzar, recolectando monedas y cofres.",
