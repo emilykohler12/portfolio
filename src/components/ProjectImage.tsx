@@ -15,8 +15,14 @@ export default function ProjectImage({
 }: ProjectImageProps) {
   if (src) {
     return (
-      <div className={`relative overflow-hidden ${className}`}>
-        <Image src={src} alt={alt} fill className="object-cover" />
+      <div className={`relative overflow-hidden bg-black/25 ${className}`}>
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="(min-width: 1024px) 560px, 100vw"
+          className="object-contain p-2 sm:p-4"
+        />
       </div>
     );
   }
