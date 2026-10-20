@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Parisienne, Jost } from "next/font/google";
+import { profile } from "@/data/content";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -18,10 +19,40 @@ const jost = Jost({
   subsets: ["latin"],
 });
 
+const title = "Emily Kohler — Desarrolladora Full Stack";
+const description =
+  "Portafolio de Emily Kohler, desarrolladora full stack en Posadas, Misiones: proyectos con React, Next.js y Node.js, habilidades y contacto.";
+
 export const metadata: Metadata = {
-  title: "Emily Kohler — Desarrolladora Full Stack",
-  description:
-    "Portafolio de Emily Kohler, desarrolladora full stack: proyectos, habilidades y contacto.",
+  metadataBase: new URL(profile.siteUrl),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    locale: "es_AR",
+    siteName: "Emily Kohler",
+    title,
+    description,
+    images: [
+      {
+        url: "/emi1.jpg",
+        width: 1280,
+        height: 959,
+        alt: "Emily Kohler, desarrolladora full stack",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/emi1.jpg"],
+  },
+  verification: {
+    google: "cK13-mMl6LSZ9J7B6euj-K9cCuvNFWPcGm8arbRz7vM",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

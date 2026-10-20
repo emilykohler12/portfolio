@@ -36,6 +36,9 @@ export const profile = {
   // de WhatsApp.
   whatsapp: "5493751574185",
   location: "Posadas, Misiones, Argentina",
+  // URL pública del sitio (sin barra final). Se usa para el canonical, el
+  // sitemap y las vistas previas al compartir. Cambiala si usás otro dominio.
+  siteUrl: "https://porfafoliokohleremily.vercel.app",
   github: "https://github.com/emilykohler12",
   linkedin: "https://www.linkedin.com/in/emily-noral%C3%AD-kohler-17ba62290/",
 };
