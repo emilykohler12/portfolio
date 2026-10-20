@@ -324,6 +324,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     status: "Proyecto personal",
+    repo: "https://github.com/emilykohler12/lexsearch",
     image: "/projects/lexsearch.png",
   },
   {
@@ -339,6 +340,7 @@ export const projects: Project[] = [
     ],
     stack: ["HTML", "CSS", "JavaScript", "Node.js"],
     status: "Proyecto de mi empresa",
+    repo: "https://github.com/emilykohler12/kologic",
     image: "/projects/kologic.webp",
   },
   {
