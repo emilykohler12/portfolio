@@ -31,8 +31,9 @@ export const profile = {
 
   email: "emilynoralikohler@gmail.com",
   phone: "+54 3751 574185",
-  // Número anterior en formato wa.me (código de país + 9 + característica +
-  // número, sin espacios ni signos), para el link directo de WhatsApp.
+  // Mismo número que `phone`, en formato wa.me (código de país + 9 +
+  // característica + número, sin espacios ni signos), para el link directo
+  // de WhatsApp.
   whatsapp: "5493751574185",
   location: "Posadas, Misiones, Argentina",
   github: "https://github.com/emilykohler12",
