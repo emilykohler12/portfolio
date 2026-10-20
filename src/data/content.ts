@@ -342,6 +342,32 @@ export const projects: Project[] = [
     image: "/projects/kologic.webp",
   },
   {
+    name: "Sistema Ministerio",
+    description:
+      "Plataforma web donde las escuelas de Misiones consultan y descargan recursos educativos (talleres y normativas) del Ministerio de Educación, sin pedirlos de a uno.",
+    highlights: [
+      "Catálogo organizado por nivel, categoría y taller, con archivos o enlaces como recursos, y normativas",
+      "Las instituciones descargan sin iniciar sesión: solo completan cargo, localidad e institución",
+      "Panel de administración con acceso autenticado para gestionar catálogo, normativas, padrón y configuración",
+      "Dashboard con métricas de descargas",
+      "Tests unitarios, de extremo a extremo y de base de datos",
+    ],
+    stack: [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "React Router",
+      "React Query",
+      "Supabase",
+      "PostgreSQL",
+      "Vitest",
+      "Playwright",
+    ],
+    status: "En desarrollo",
+    repo: "https://github.com/emilykohler12/sistema_ministerio",
+  },
+  {
     name: "Hidden Memories",
     description:
       "Videojuego 2D de aventura hecho en Unity: una chica atraviesa un mundo acuático superando obstáculos para avanzar, recolectando monedas y cofres.",
